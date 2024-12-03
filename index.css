@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: "Smythe", system-ui;
+} 
+
+main {
+    margin-right: 10px;
+    /* temporary */
+} 
+
+header {
+    height: 230px;
+    width: 700px;
+    background-image: url('./images/burger_banner.jpg');
+    background-position: center;
+    background-position: 100px;
+    background-size: cover;
+    color: white;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 39px;
+    line-height: 24px;
+}
+
+header h2 {
+    font-size: 22.5px;
+    line-height: 13.8px;
+}
+
+.banner-img {
+    width: 600px;
+    height: 167px;
+}
+
+.banner-elements {
+   padding-top: 46px;
+   padding-left: 46px;
+   padding-bottom: 70px ;
+}
+
+#food-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 700px;
+    margin-top: 67px;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.full-item {}
+
+.individual-item {
+    display: flex;
+    border-bottom: #8B8B8B 1px solid;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.individual-item p {
+    font-size: 79px;
+    line-height: 98.4px;
+    margin-left: 46px;
+}
+
+.individual-item h1 {
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.individual-item h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 100;
+    color: #8B8B8B;
+}
+
+.individual-item h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.individual-item-details {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+
+.individual-item button {
+    background-color: transparent;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.individual-item button:hover {
+    opacity: 50%;
+}
+
+#order-container {
+    text-align: center;
+    width: 508px;
+    height: 319px;
+    margin: auto;
+    margin-top: 45px;
+}
+
+#order-details {
+    text-align: center;
+}
+
+#order-details h1 {
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.food-total, .food-item-burger, .food-item-pizza, .food-item-beer {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.food-total h2, .food-item-burger h2, .food-item-pizza h2, .food-item-beer h2 {
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.food-total p, .food-item-burger p, .food-item-pizza p, .food-item-beer p {
+    font-size: 20px;
+    line-height: 24px;   
+}
+
+.food-total h3, .food-item-burger h3, .food-item-pizza h3, .food-item-beer h3 {
+    font-size: 28px;
+    line-height: 24px;
+}
+
+.food-total {
+    border-top: 3px black solid;
+}
+
+.name-remove {
+    display: flex;
+}
+
+.name-remove button {
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 24px;
+    border: none;
+    color: #BBBBBB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 13px;
+}
+
+.name-remove button:hover {
+    opacity: 50%;
+}
+
+.complete-btn button {
+    background-color: #16DB99;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    height: 60px;
+    width: 508px;
+    margin-top: 53px;
+    margin-bottom: 53px;
+}
+
+.complete-btn button:hover {
+    opacity: 50%;
+}
+
+.modal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    height: 542px;
+    width: 524px;
+    margin: auto;
+    position: absolute;
+    top: 576px;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    z-index: 1000;
+    text-align: center;
+}
+
+.modal input {
+    height: 72px;
+    width: 478px;
+}
+
+.modal h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.dull-body {
+    background: rgba(0, 0, 0, 0.1); 
+    z-index: -1; 
+    backdrop-filter: blur(5px); 
+}
+
+.inputs {
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+}
+
+.inputs input {
+    border-radius: 3.89;
+    font-size: 20px;
+    line-height: 31.1px;
+    padding-left: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#pay-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 31.1px;
+    font-weight: bold;
+    color: white;
+    margin-top: 46px;
+    height: 72px;
+    width: 478px;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3.89;
+}
+
+#pay-btn:hover {
+    opacity: 50%;
+}
+
+.thanks {
+    display: flex;
+    width: 504px;
+    height: 120px;
+    background-color: #ECFDF5;
+    color: #065F46;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 100px;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.thanks h1 {
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+} 
